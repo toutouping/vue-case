@@ -31,10 +31,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 ## 效果展示
 
-![1](./present/1.png)
+![demo](./present/1.PNG)
 
-![2](./present/2.png)
+![2](./present/2.PNG)
 
-![3](./present/3.png)
+![3](./present/3.PNG)
 
-![4](./present/4.png)
+![4](./present/4.PNG)
