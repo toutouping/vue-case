@@ -31,8 +31,8 @@
             <span class="verify-code"></span>
           </div>
         </div>
-        <v-button :button-text="'确定'" :button-class="'btn-info'"></v-button>
-        <v-button :button-text="'取消'" :button-class="'btn-default'"></v-button>
+        <v-button :type="'block'">确定</v-button>
+        <v-button :type="'block'" :color="'secondary'">取消</v-button>
       </div>
     </div>
   </transition>

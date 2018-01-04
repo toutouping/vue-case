@@ -82,14 +82,56 @@
         <image-load v-if="imageLoadList.length>0" :disc-list="imageLoadList"></image-load>
       </div>
       <div class="tab-content btn-content" v-if="showTab === 3">
-        <v-button @btn-click="alertFn" :button-text="'提示（自定义样式）'" :button-class="'btn-info'"></v-button>
+        <!-- <scroll :click="true" :probe-type="3"> -->
+          <h2>1、Basic Usage</h2>
+          <p><v-button @btn-click="clickFn" :color="'light'">Light</v-button></p>
+          <p><v-button >Default</v-button></p>
+          <p><v-button :color="'secondary'">Secondary</v-button></p>
+          <p><v-button :color="'danger'">Danger</v-button></p>
+          <p><v-button :color="'dark'">Dark</v-button></p>
+          <h2>2、Outline Style</h2>
+          <p><v-button :color="'light'" :type="'outline'">Light</v-button></p>
+          <p><v-button :type="'outline'">Default</v-button></p>
+          <p><v-button :color="'secondary'" :type="'outline'">Secondary</v-button></p>
+          <p><v-button :color="'danger'" :type="'outline'">Danger</v-button></p>
+          <p><v-button :color="'dark'" :type="'outline'">Dark</v-button></p>
+          <h2>3、Clear Style</h2>
+          <p><v-button :color="'light'" :type="'clear'">Light</v-button></p>
+          <p><v-button :type="'clear'">Default</v-button></p>
+          <p><v-button :color="'secondary'" :type="'clear'">Secondary</v-button></p>
+          <p><v-button :color="'danger'" :type="'clear'">Danger</v-button></p>
+          <p><v-button :color="'dark'" :type="'clear'">Dark</v-button></p>
+          <h2>4、Round Buttons</h2>
+          <p><v-button :color="'light'" :type="'round'">Light</v-button></p>
+          <p><v-button :type="'round'">Default</v-button></p>
+          <p><v-button :color="'secondary'" :type="'round'">Secondary</v-button></p>
+          <p><v-button :color="'danger'" :type="'round'">Danger</v-button></p>
+          <p><v-button :color="'dark'" :type="'round'">Dark</v-button></p>
+          <h2>5、Block Buttons</h2>
+          <v-button :color="'light'" :type="'block'">Light</v-button></p>
+          <v-button :type="'block'">Default</v-button></p>
+          <v-button :color="'secondary'" :type="'block'">Secondary</v-button></p>
+          <v-button :color="'danger'" :type="'block'">Danger</v-button></p>
+          <v-button :color="'dark'" :type="'block'">Dark</v-button></p>
+          <h2>Full Buttons</h2>
+          <p><v-button :color="'light'" :type="'full'">Light</v-button></p>
+          <p><v-button :type="'full'">Default</v-button></p>
+          <p><v-button :color="'secondary'" :type="'full'">Secondary</v-button></p>
+          <p><v-button :color="'danger'" :type="'full'">Danger</v-button></p>
+          <p><v-button :color="'dark'" :type="'full'">Dark</v-button></p>
+          <h2>6、Button Sizes</h2>
+          <p><v-button :color="'light'" :size="'small'">small</v-button></p>
+          <p><v-button>Default Medium</v-button></p>
+          <p><v-button :color="'danger'" :size="'large'">Secondary Large</v-button></p>
+          <h2>7、Icon Buttons</h2></p>
+          <p><v-button><span class="usr icon-uniF0C9F9"></span>Icon Buttons</v-button></p>
+        <!-- </scroll> -->
       </div>
-
       <div class="tab-content" v-if="showTab === 4">
-        <v-button @btn-click="alertFn" :button-text="'提示（自定义样式）'" :button-class="'btn-info'"></v-button>
-        <v-button @btn-click="confirmFn" :button-text="'确认（默认样式）'" :button-class="'btn-def'"></v-button>
-        <v-button @btn-click="toastFn" :button-text="'面包片（默认样式）'" :button-class="'btn-info'"></v-button>
-        <v-button @btn-click="loadingFn" :button-text="'Loading框'" :button-class="'btn-def'"></v-button>
+        <p><v-button @btn-click="alertFn" :type="'block'">提示（自定义样式）</v-button></p>
+        <p><v-button @btn-click="confirmFn" :type="'block'" :color="'secondary'">确认（默认样式）</v-button></p>
+        <p><v-button @btn-click="toastFn" :type="'block'" :color="'light'">面包片（默认样式）</v-button></p>
+        <p><v-button @btn-click="loadingFn" :type="'block'" :color="'danger'">Loading框</v-button></p>
       </div>
       <div class="tab-content" v-if="showTab === 5">
       </div>
@@ -98,6 +140,7 @@
 </template>
 
 <script type="text/ecmascript-6">
+import scroll from "base/scroll/scroll.vue";
 import Slider from "base/slider/slider";
 import searchBox from "base/searchBox/searchBox";
 import horMenu from "base/horMenu/horMenu";
@@ -117,7 +160,7 @@ export default {
       indexListTitle: "",
       indexList: [],
       imageLoadList: [],
-      showTab: 0,
+      showTab: 3,
       userSettingShow: false,
       settingStatus: "down",
       otherContentStyle: OTHER_STYLE
@@ -150,6 +193,9 @@ export default {
       setTimeout(() => {
         this.$loading.hide();
       }, 2000);
+    },
+    clickFn() {
+      console.log("clickFn");
     },
     alertFn() {  // 已经注册为全局组件(base/wc-messagebox)，固可以直接使用$alert
       this.$alert({
@@ -312,7 +358,8 @@ export default {
     Slider: Slider,
     indexList: indexList,
     imageLoad: imageLoad,
-    vButton: vButton
+    vButton: vButton,
+    scroll: scroll
   }
 };
 </script>
@@ -510,6 +557,19 @@ export default {
     }
     .btn-content{
       padding: 20px;
+      overflow-x: auto;
+      h2{
+        font-size: 20px;
+        line-height: 2;
+      }
+      .button{
+        .usr{
+          font-size: 1.4rem;
+          line-height: .67;
+          pointer-events: none;
+          padding-right: .4em;
+        }
+      }
     }
   }
 }

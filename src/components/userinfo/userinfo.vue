@@ -28,7 +28,7 @@
           <v-item :item-text="'修改个人资料'" :item-note="''" :item-icon="'icon-uniF200F9'"></v-item>
           <v-item :item-text="'绑定授权'" :item-note="''" :item-icon="'icon-uniF200F9'"></v-item>
       </v-item-list>
-      <div class="logout"><v-button @btn-click="logoutFn" :button-text="'退出'" :button-class="'btn-default'"></v-button></div>
+      <div class="logout"><v-button @btn-click="logoutFn" :type="'block'">退出</v-button></div>
     </div>
     <update-password ref="updatePassword"></update-password>
   </div>

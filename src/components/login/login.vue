@@ -23,8 +23,8 @@
       </label>
     </div>
     <div class="operate">
-      <v-button @btn-click="loginFn" :button-text="'登录'" :button-class="'btn-info'"></v-button>
-      <v-button :button-text="'注册'" :button-class="'btn-default'"></v-button>
+      <v-button @btn-click="loginFn" :type="'block'">登录</v-button>
+      <v-button :type="'block'" :color="'secondary'">注册</v-button>
     </div>
     <div class="other">
       <fieldset class="oth_type_tit">
