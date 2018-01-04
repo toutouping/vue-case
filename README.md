@@ -2,11 +2,15 @@
 
 > A Vue.js project
 
-## Build Setup
+## 项目构建启动
+
+在此之前建议先单独安装node-sass, 我在安装过程中遇到N多坑，如果你也遇到，可参照（https://www.v2ex.com/t/361746  https://www.jianshu.com/p/145cc862ceec ） 解决
+
+![0](./present/0.PNG)
 
 ``` bash
 # install dependencies
-npm install
+cnpm install
 
 # serve with hot reload at localhost:8080
 npm run dev
