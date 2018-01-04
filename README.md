@@ -42,3 +42,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ![3](./present/3.PNG)
 
 ![4](./present/4.PNG)
+
+![5](./present/5.PNG)
