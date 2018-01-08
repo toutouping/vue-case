@@ -4,13 +4,21 @@
 
 ## 项目构建启动
 
-在此之前建议先单独安装node-sass, 我在安装过程中遇到N多坑，如果你也遇到，可参照（https://www.v2ex.com/t/361746  https://www.jianshu.com/p/145cc862ceec ） 解决
+由于node-sass安装过程中总会遇到N多坑，为了避免安装失败，（可参照 https://www.v2ex.com/t/361746  https://www.jianshu.com/p/145cc862ceec ）
+首先检测 python2 命令是否成功，然后执行（请根据自己的node版本下载对应） set sass_binary_site=./node
+s/win32-x64-57_binding.node
 
 ![0](./present/0.PNG)
 
 ``` bash
+
+# set sass_binary_site=./node
+s/win32-x64-57_binding.node
+set sass_binary_site=./node
+s/win32-x64-57_binding.node
+
 # install dependencies
-cnpm install
+npm install
 
 # serve with hot reload at localhost:8080
 npm run dev

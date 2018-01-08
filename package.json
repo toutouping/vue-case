@@ -15,6 +15,7 @@
     "server": "node prod-server.js"
   },
   "dependencies": {
+    "node-sass": "^4.7.2",
     "better-scroll": "^1.6.0",
     "vue": "^2.5.2",
     "vue-lazyload": "^1.1.4",
