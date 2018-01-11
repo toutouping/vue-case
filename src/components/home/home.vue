@@ -133,21 +133,28 @@
         <p><v-button @btn-click="toastFn" :type="'block'" :color="'light'">面包片（默认样式）</v-button></p>
         <p><v-button @btn-click="loadingFn" :type="'block'" :color="'danger'">Loading框</v-button></p>
       </div>
-      <div class="tab-content" v-if="showTab === 5">
+      <div class="tab-content lazy-content" v-if="showTab === 5">
+        <lazy-scroll></lazy-scroll>
+      </div>
+      <div class="tab-content lang-content" v-if="showTab === 6">
+          <p><v-button @btn-click="chooseLanguageFn('zh')" :color="'light'">中文</v-button></p>
+          <p><v-button @btn-click="chooseLanguageFn('en')">English</v-button></p>
+          <div class="show-lang-txt">{{getLangulageTxt}}</div>
       </div>
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
-import scroll from "base/scroll/scroll.vue";
+// import scroll from "base/scroll/scroll.vue";
 import Slider from "base/slider/slider";
 import searchBox from "base/searchBox/searchBox";
 import horMenu from "base/horMenu/horMenu";
 import indexList from "base/indexList/indexList";
 import vButton from "base/vButton/vButton";
-import imageLoad from "components/imageLoad/imageLoad";
 import wxAlert from "base/messagebox/tpls/wxAlert";
+import lazyScroll from "components/lazyScroll/lazyScroll";
+import imageLoad from "components/imageLoad/imageLoad";
 
 const SETTING_TOP = 60;
 const SETTING_BOTTOM = 110;
@@ -160,7 +167,7 @@ export default {
       indexListTitle: "",
       indexList: [],
       imageLoadList: [],
-      showTab: 3,
+      showTab: 0,
       userSettingShow: false,
       settingStatus: "down",
       otherContentStyle: OTHER_STYLE
@@ -185,6 +192,9 @@ export default {
         ret.push(group);
       });
       return ret;
+    },
+    getLangulageTxt() {
+      return this.$i18n.t("navigator.doc");
     }
   },
   methods: {
@@ -228,6 +238,9 @@ export default {
       // }).catch(() => {
       //   console.log("异常");
       });
+    },
+    chooseLanguageFn(lang) {
+      this.$i18n.locale = lang;
     },
     toastFn() {
       console.log("toastFn");
@@ -359,7 +372,7 @@ export default {
     indexList: indexList,
     imageLoad: imageLoad,
     vButton: vButton,
-    scroll: scroll
+    lazyScroll: lazyScroll
   }
 };
 </script>
@@ -569,6 +582,19 @@ export default {
           pointer-events: none;
           padding-right: .4em;
         }
+      }
+    }
+    .lazy-content{
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 126px);
+      background: #fff;
+      overflow: hidden;
+    }
+    .lang-content{
+      .show-lang-txt{
+        padding: 20px;
+        font-size: 20px;
       }
     }
   }

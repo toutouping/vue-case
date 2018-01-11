@@ -26,7 +26,7 @@ const router = new Router({
       name: "home",
       component: home,
       meta: {
-        auth: false,
+        auth: true,
         keepAlive: true
       }
     },

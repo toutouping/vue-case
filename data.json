@@ -18,7 +18,10 @@
         "name": "弹框"
       },
       {
-        "name": "Acion Sheets"
+        "name": "按需加载"
+      },
+      {
+        "name": "国际化"
       }
     ],
     "items": [

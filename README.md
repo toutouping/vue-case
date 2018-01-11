@@ -12,8 +12,7 @@ s/win32-x64-57_binding.node
 
 ``` bash
 
-# set sass_binary_site=./node
-s/win32-x64-57_binding.node
+# set sass_binary_site
 set sass_binary_site=./node
 s/win32-x64-57_binding.node
 
@@ -49,6 +48,10 @@ npm test
 > [vue-resource](https://www.npmjs.com/package/vue-resource) 请求数据，服务器通讯，官方推荐[axios](https://www.npmjs.com/package/axios)请求数据，本项目后期改用[axios](https://www.npmjs.com/package/axios)。
 
 > [vuex](https://vuex.vuejs.org/zh-cn/) 是一个专为 vue.js 应用程序开发的状态管理模式，简单来说Vuex就是管理数据的。
+
+> [better-scroll](https://github.com/ustbhuangyi/better-scroll)  是一款重点解决移动端（未来可能会考虑 PC 端）各种滚动场景需求的插件。
+
+> [vue-lazyload](https://github.com/hilongjw/vue-lazyload)  是一款实现图片懒加载的插件。
 
 ## 效果展示
 

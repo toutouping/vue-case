@@ -35,7 +35,7 @@
         </div>
         <div class="after-trigger" v-else>
           <div v-if="isPullingDown" class="loading">
-            <!-- <loading></loading> -->
+            <loading></loading>
           </div>
           <div v-else><span>{{refreshTxt}}</span></div>
         </div>
@@ -46,8 +46,8 @@
 
 <script type="text/ecmascript-6">
 import BScroll from "better-scroll";
-// import Loading from "../loading/loading.vue";
-// import Bubble from "../bubble/bubble.vue";
+import Loading from "base/loading/loading.vue";
+import Bubble from "base/bubble/bubble.vue";
 import { getRect } from "common/js/dom";
 
 const COMPONENT_NAME = "scroll";
@@ -122,18 +122,16 @@ export default {
   computed: {
     pullUpTxt() {
       const moreTxt =
-        (this.pullUpLoad && this.pullUpLoad.txt && this.pullUpLoad.txt.more) ||
-        this.$i18n.t("scrollComponent.defaultLoadTxtMore");
+        (this.pullUpLoad && this.pullUpLoad.txt && this.pullUpLoad.txt.more) || "加载更多";
 
       const noMoreTxt =
-        (this.pullUpLoad && this.pullUpLoad.txt && this.pullUpLoad.txt.noMore) ||
-        this.$i18n.t("scrollComponent.defaultLoadTxtNoMore");
+        (this.pullUpLoad && this.pullUpLoad.txt && this.pullUpLoad.txt.noMore) || "没有更多数据了";
 
       return this.pullUpDirty ? moreTxt : noMoreTxt;
     },
     refreshTxt() {
       return (
-        (this.pullDownRefresh && this.pullDownRefresh.txt) || this.$i18n.t("scrollComponent.defaultRefreshTxt")
+        (this.pullDownRefresh && this.pullDownRefresh.txt) || "刷新成功"
       );
     }
   },
@@ -278,8 +276,8 @@ export default {
     }
   },
   components: {
-    // Loading,
-    // Bubble,
+    Loading,
+    Bubble
   }
 };
 </script>
