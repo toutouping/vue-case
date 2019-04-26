@@ -267,7 +267,7 @@ export default {
       this.userSettingShow = false;
     },
     _getData() {
-      this.$http.get("/static/data.json").then(response => {
+      this.$http.get("./static/data.json").then(response => {
         response = response["body"];
         if (response && response.code === 0) {
           this.navList = [];
