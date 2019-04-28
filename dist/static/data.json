@@ -26,16 +26,16 @@
     ],
     "items": [
       {
-        "img_url": "/static/images/img0.png"
+        "img_url": "./static/images/img0.png"
       },
       {
-        "img_url": "/static/images/img1.png"
+        "img_url": "./static/images/img1.png"
       },
       {
-        "img_url": "/static/images/img2.png"
+        "img_url": "./static/images/img2.png"
       },
       {
-        "img_url": "/static/images/img3.png"
+        "img_url": "./static/images/img3.png"
       }
     ],
     "indexList": [
@@ -202,87 +202,87 @@
     ],
     "imageLoadList": [
       {
-        "imgurl": "/static/images/img0.png",
+        "imgurl": "./static/images/img0.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img1.png",
+        "imgurl": "./static/images/img1.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img2.png",
+        "imgurl": "./static/images/img2.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img3.png",
+        "imgurl": "./static/images/img3.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img4.png",
+        "imgurl": "./static/images/img4.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img5.png",
+        "imgurl": "./static/images/img5.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img6.png",
+        "imgurl": "./static/images/img6.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img7.png",
+        "imgurl": "./static/images/img7.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img8.png",
+        "imgurl": "./static/images/img8.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img9.png",
+        "imgurl": "./static/images/img9.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img10.png",
+        "imgurl": "./static/images/img10.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img11.png",
+        "imgurl": "./static/images/img11.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img12.png",
+        "imgurl": "./static/images/img12.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img13.png",
+        "imgurl": "./static/images/img13.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img13.png",
+        "imgurl": "./static/images/img13.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img13.png",
+        "imgurl": "./static/images/img13.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       },
       {
-        "imgurl": "/static/images/img13.png",
+        "imgurl": "./static/images/img13.png",
         "name": "风景",
         "desc": "主要旅游景点有丽江古城、大理洱海、石林、泸沽湖、香格里拉、西双版纳、梅里雪山、腾冲"
       }
